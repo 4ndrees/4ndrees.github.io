@@ -1,8 +1,12 @@
+/*Elementos generales*/
+*{
+    margin:0;
+    padding:0;
+}
+
 body{
     background-color: #1B1B1B;
     color: #F5F6FA;
-    margin: 0;
-    padding: 0;
 }
 
 h1{
@@ -12,6 +16,11 @@ h1{
     text-align: center;
 }
 
+cite {
+    font-weight: 700;
+}
+
+/*Clases e id's*/
 .section-title{
     color: #ffe65d;
     font-family: "Chakra Petch", sans-serif;
@@ -20,6 +29,24 @@ h1{
     text-align: center;
 }
 
+.section{
+    margin: 0px 50px 0px 50px;
+    padding: 10px 100px 10px 100px;
+}
+
 #inicio{
+    margin: 0px 0px 20px 0px;
     background-color: #262626;
+}
+
+#sobremi{
+    border-top: 1px solid #242424;
+    border-left: 1px solid #242424;
+    border-right: 1px solid #242424;
+}
+
+#proyectos{
+    border-top: 1px solid #242424;
+    border-left: 1px solid #242424;
+    border-right: 1px solid #242424;
 }
