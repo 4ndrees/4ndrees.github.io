@@ -1,10 +1,23 @@
 body{
     background-color: #1B1B1B;
-    color: #F5F6FA
+    color: #F5F6FA;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-size: 70px;
+    text-align: center;
 }
 
 .section-title{
-    color: #ffe65d
+    color: #ffe65d;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
 }
 
 #inicio{
