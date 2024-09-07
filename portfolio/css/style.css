@@ -7,7 +7,7 @@
 body{
     background-color: #1B1B1B;
     color: #F5F6FA;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 h1{
@@ -17,8 +17,17 @@ h1{
     text-align: center;
 }
 
-cite {
-    font-weight: 700;
+p{
+    font-weight: 100;
+}
+
+strong{
+    font-style: normal;
+}
+
+cite{
+    font-weight: 500;
+    font-style: normal;
 }
 
 /*Clases e id's*/
