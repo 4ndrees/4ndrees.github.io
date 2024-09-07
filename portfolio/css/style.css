@@ -1,8 +1,12 @@
 body{
-    background-color: #1A1919;
+    background-color: #1B1B1B;
     color: #F5F6FA
 }
 
 .section-title{
     color: #ffe65d
+}
+
+#inicio{
+    background-color: #262626;
 }
