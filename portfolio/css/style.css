@@ -7,7 +7,7 @@
 body{
     background-color: #1B1B1B;
     color: #F5F6FA;
-    font-family: "Poppins", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 h1{
@@ -15,6 +15,7 @@ h1{
     font-weight: 300;
     font-size: 70px;
     text-align: center;
+    margin: 10px;
 }
 
 p{
@@ -30,6 +31,15 @@ cite{
     font-style: normal;
 }
 
+i{
+    font-size: 45px;
+}
+
+li{
+    float: left;
+    margin-right: 22px;
+}
+
 /*Clases e id's*/
 .section-title{
     color: #ffe65d;
@@ -37,6 +47,12 @@ cite{
     font-weight: 300;
     font-size: 35px;
     text-align: center;
+}
+
+#socialmedia{
+    margin-top: 20px;
+    margin-left: 60px;
+    list-style: none;
 }
 
 .section{
@@ -49,5 +65,6 @@ cite{
 
 #inicio{
     margin: 0px 0px 20px 0px;
+    padding: 100px 0px 100px 0px;
     background-color: #262626;
 }
