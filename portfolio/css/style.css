@@ -10,6 +10,19 @@ body{
     font-family: "Open Sans", sans-serif;
 }
 
+header{
+    margin: 0px 50px 0px 50px;
+    padding: 10px 100px 10px 100px;
+}
+
+section{
+    margin: 0px 50px 0px 50px;
+    padding: 10px 100px 10px 100px;
+    border-top: 1px solid #242424;
+    border-left: 1px solid #242424;
+    border-right: 1px solid #242424;
+}
+
 h1{
     font-family: "Chakra Petch", sans-serif;
     font-weight: 300;
@@ -70,14 +83,6 @@ li{
     margin-top: 20px;
     margin-left: 60px;
     list-style: none;
-}
-
-.section{
-    margin: 0px 50px 0px 50px;
-    padding: 10px 100px 10px 100px;
-    border-top: 1px solid #242424;
-    border-left: 1px solid #242424;
-    border-right: 1px solid #242424;
 }
 
 #inicio{
