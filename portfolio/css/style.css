@@ -35,6 +35,23 @@ i{
     font-size: 45px;
 }
 
+i:hover{
+    color:#00A8FF;
+    font-weight: bold;
+}
+
+a:any-link{
+    color:#F5F6FA;
+}
+
+a:-webkit-any-link{
+    color:#F5F6FA;
+}
+
+a:-moz-any-link{
+    color:#F5F6FA;
+}
+
 li{
     float: left;
     margin-right: 22px;
