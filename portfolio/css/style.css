@@ -10,6 +10,29 @@ body{
     font-family: "Open Sans", sans-serif;
 }
 
+nav{
+    background-color: #1B1B1B;
+    padding-left: 50px;
+    max-height: 50px;
+    width: 100%;
+    position:fixed;
+    left:0px;
+    top:0px;
+}
+
+nav ul{
+    height: 50px;
+}
+
+nav ul li{
+    float: left;
+    padding: 14px 0px 14px 0px;
+}
+
+nav ul li:hover{
+    background-color: black;
+}
+
 header{
     margin: 0px 50px 0px 50px;
     padding: 10px 100px 10px 100px;
@@ -54,6 +77,7 @@ i:hover{
 }
 
 a:any-link{
+    text-decoration: none;
     color:#F5F6FA;
 }
 
@@ -63,6 +87,14 @@ a:-webkit-any-link{
 
 a:-moz-any-link{
     color:#F5F6FA;
+}
+
+ul{
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 li{
@@ -79,14 +111,19 @@ li{
     text-align: center;
 }
 
+.nav-item{
+    padding-right: 30px;
+    padding-left: 30px;
+    margin:0;
+}
+
 #socialmedia{
     margin-top: 20px;
-    margin-left: 60px;
-    list-style: none;
+    text-align: center;
 }
 
 #inicio{
-    margin: 0px 0px 20px 0px;
+    margin: 40px 0px 40px 0px;
     padding: 100px 0px 100px 0px;
     background-color: #262626;
 }
