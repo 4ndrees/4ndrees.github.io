@@ -39,40 +39,59 @@
     <article>
         <!--Bloque sobre mi-->
         <section id="sobremi">
-            <h2 class="section-title">Sobre mi</h2>
-            <img src="./imagenes/ejemplo_carnet_escalado.jpg" alt="Foto Andres Viñé" height="250">
-            <p>Soy <strong>Andrés Viñé</strong>, estudiante de <span>Ingeniería Informática</span> en la <span>Universidad Complutense de Madrid</span>, apasionado 
-                por aprender y ansioso por adentrarme en el mundo profesional. Me interesa tanto el area de <span>desarrollo de Software</span> como la
-                <span>arquitectura del mismo</span> que hace que todo funcione correctamente.</p>
-            <p>Me defino como una persona entusiasta, trabajadora y creativa, comprometida con la innovación y el desarrollo en este 
-                campo tan dinámico, donde mi máxima es <cite>"el mundo es un aula maravillosa de aprendizaje continuo"</cite>.</p>
+            <img id="sobremi-image" src="./imagenes/ejemplo_carnet_escalado.jpg" alt="Foto Andres Viñé" height="250">
+            <div id="sobremi-text">
+                <h2 id="sobremi-title" class="section-title">Sobre mi</h2>
+                <p>Soy <strong>Andrés Viñé</strong>, estudiante de <span>Ingeniería Informática</span> en la <span>Universidad Complutense de Madrid</span>, apasionado 
+                    por aprender y ansioso por adentrarme en el mundo profesional. Me interesa tanto el area de <span>desarrollo de Software</span> como la
+                    <span>arquitectura del mismo</span> que hace que todo funcione correctamente.</p>
+                <p>Me defino como una persona entusiasta, trabajadora y creativa, comprometida con la innovación y el desarrollo en este 
+                    campo tan dinámico, donde mi máxima es <cite>"el mundo es un aula maravillosa de aprendizaje continuo"</cite>.</p>
+            </div>
         </section>
         <!--FIN Bloque sobre mi-->
         <!--Bloque Proyectos-->
         <section id="proyectos">
             <h2 class="section-title">Proyectos</h2>
-            <h3>Trabajo realizado a través de mi etapa como estudiante</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="4">Ejemplos de proyectos</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Web</td>
-                        <td>IA</td>
-                        <td>Java</td>
-                        <td>Python</td>
-                    </tr>
-                    <tr>
-                        <td>Buscaminas</td>
-                        <td>Detección de neumonía</td>
-                        <td>Simulador físico</td>
-                        <td>Pokemon snake</td>
-                    </tr>
-                </tbody>    
-            </table>
+            <div id="proyectos-details">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./imagenes/buscaminas_logo_escalado.png" alt="imagen proyecto 1">
+                        <h3>Proyecto 1</h3>
+                    </div>
+                    <div class="technologies">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <p>Esto es el proyecto 1</p>
+                    <button><i class="fa-brands fa-github"></i>github</button>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./imagenes/neural_network_escalado.png" alt="imagen proyecto 2">
+                        <h3>Proyecto 2</h3>
+                    </div>
+                    <div class="technologies">
+                        <i class="fa-brands fa-java"></i>
+                        <i class="fa-brands fa-git-alt"></i>
+                    </div>
+                    <p>Esto es el proyecto 2</p>
+                    <button><i class="fa-brands fa-github"></i>github</button>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="./imagenes/codigo_escalado.png" alt="imagen proyecto 3">
+                        <h3>Proyecto 3</h3>
+                    </div>
+                    <div class="technologies">
+                        <i class="fa-brands fa-python"></i>
+                        <i class="fa-brands fa-git-alt"></i>
+                    </div>
+                    <p>Esto es el proyecto 3</p>
+                    <button><i class="fa-brands fa-github"></i>github</button>
+                </div>
+            </div>
         </section>
         <!--FIN Bloque Proyectos-->
         <!--Bloque Habilidades-->
