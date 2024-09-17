@@ -39,7 +39,9 @@
     <article>
         <!--Bloque sobre mi-->
         <section id="sobremi">
-            <img id="sobremi-image" src="./imagenes/ejemplo_carnet_escalado.jpg" alt="Foto Andres Viñé" height="250">
+            <div id="imgsobremi">
+                <img id="sobremi-image" src="./imagenes/ejemplo_carnet_escalado.jpg" alt="Foto Andres Viñé" height="250">
+            </div>
             <div id="sobremi-text">
                 <h2 id="sobremi-title" class="section-title">Sobre mi</h2>
                 <p>Soy <strong>Andrés Viñé</strong>, estudiante de <span>Ingeniería Informática</span> en la <span>Universidad Complutense de Madrid</span>, apasionado 
@@ -56,40 +58,46 @@
             <div id="proyectos-details">
                 <div class="card">
                     <div class="card-header">
-                        <img src="./imagenes/buscaminas_logo_escalado.png" alt="imagen proyecto 1">
+                        <img src="./imagenes/imagen_buscaminas.png" alt="imagen proyecto 1">
                         <h3>Proyecto 1</h3>
                     </div>
-                    <div class="technologies">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-js"></i>
+                    <div class="card-info">
+                        <div class="technologies">
+                            <img class="technologies-logo" src="./imagenes/icons/html-5.png" alt="html logo">
+                            <img class="technologies-logo" src="./imagenes/icons/css-3.png" alt="css logo">
+                            <img class="technologies-logo" src="./imagenes/icons/javascript_logo.png" alt="javascript logo" width="40px">
+                        </div>
+                        <p>Esto es el proyecto 1</p>
+                        <button><i class="fa-brands fa-github"></i><span>&ensp;&ensp;github</span></button>
                     </div>
-                    <p>Esto es el proyecto 1</p>
-                    <button><i class="fa-brands fa-github"></i>github</button>
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <img src="./imagenes/neural_network_escalado.png" alt="imagen proyecto 2">
+                        <img src="./imagenes/NN.png" alt="imagen proyecto 2">
                         <h3>Proyecto 2</h3>
                     </div>
-                    <div class="technologies">
-                        <i class="fa-brands fa-java"></i>
-                        <i class="fa-brands fa-git-alt"></i>
+                    <div class="card-info">
+                        <div class="technologies">
+                            <img class="technologies-logo" src="./imagenes/icons/python_logo.png" alt="python logo">
+                            <img class="technologies-logo" src="./imagenes/icons/git_logo.png" alt="git logo">
+                        </div>
+                        <p>Esto es el proyecto 2</p>
+                        <button><i class="fa-brands fa-github"></i><span>&ensp;&ensp;github</span></button>
                     </div>
-                    <p>Esto es el proyecto 2</p>
-                    <button><i class="fa-brands fa-github"></i>github</button>
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <img src="./imagenes/codigo_escalado.png" alt="imagen proyecto 3">
+                        <img src="./imagenes/imagen_codigo.png" alt="imagen proyecto 3">
                         <h3>Proyecto 3</h3>
                     </div>
-                    <div class="technologies">
-                        <i class="fa-brands fa-python"></i>
-                        <i class="fa-brands fa-git-alt"></i>
+                    <div class="card-info">
+                        <div class="technologies">
+                            <img class="technologies-logo" src="./imagenes/icons/java_logo.png" alt="java logo">
+                            <img class="technologies-logo" src="./imagenes/icons/git_logo.png" alt="git logo">
+                        </div>
+                        <p>Esto es el proyecto 3</p>
+                        <button><i class="fa-brands fa-github"></i><span>&ensp;&ensp;github</span></button>
                     </div>
-                    <p>Esto es el proyecto 3</p>
-                    <button><i class="fa-brands fa-github"></i>github</button>
                 </div>
             </div>
         </section>
@@ -97,13 +105,67 @@
         <!--Bloque Habilidades-->
         <section id="habilidades">
             <h2 class="section-title">Habilidades</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt quis quibusdam quae! Quidem nisi aliquid est quod voluptatem magni voluptas. Nulla optio dolorem sapiente culpa repudiandae natus accusamus, corrupti error?</p>
+            <div id="lista-habilidades">
+                <div id="hab01" class="logo">
+                    <img src="./imagenes/icons/html-5.png" alt="html logo">
+                </div>
+                <div id="hab02" class="logo">
+                    <img src="./imagenes/icons/css-3.png" alt="css logo">
+                </div>
+                <div id="hab03" class="logo">
+                    <img src="./imagenes/icons/javascript_logo.png" alt="javascript logo">
+                </div>
+                <div id="hab04" class="logo">
+                    <img src="./imagenes/icons/python_logo.png" alt="python logo">
+                </div>
+                <div id="hab05" class="logo">
+                    <img src="./imagenes/icons/java_logo.png" alt="java logo">
+                </div>
+                <div id="hab06" class="logo">
+                    <img src="./imagenes/icons/c_logo.png" alt="c++ logo">
+                </div>
+                <div id="hab07" class="logo">
+                    <img src="./imagenes/icons/figma_logo.png" alt="figma logo">
+                </div>
+                <div id="hab08" class="logo">
+                    <img src="./imagenes/icons/vscode_logo.png" alt="vscode logo">
+                </div>
+                <div id="hab09" class="logo">
+                    <img src="./imagenes/icons/bash_logo.png" alt="bash logo">
+                </div>
+                <div id="hab10" class="logo">
+                    <img src="./imagenes/icons/linux_logo.png" alt="linux logo">
+                </div>
+                <div id="hab11" class="logo">
+                    <img src="./imagenes/icons/git_logo.png" alt="git logo">
+                </div>
+            </div>
         </section>
         <!--FIN Bloque Habilidades-->
         <!--Bloque contacto-->
         <section id="contacto">
             <h2 class="section-title">Contacto</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore error velit laudantium illo esse quod amet, neque voluptatem. Dolores earum quo magnam voluptates ipsa molestiae odio sequi, fugit veritatis unde.</p>
+            <form action="#">
+                <div class="form-item">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" minlength="2" maxlength="64" size="32" required>
+                </div>
+                <div class="form-item">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa" name="empresa" minlength="2" maxlength="128" size="32">
+                </div>
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" min-length="10" maxlength="128" size="32" required>
+                </div>
+                <div class="form-item">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="33" rows="10"></textarea>
+                </div>
+                <div class="form-item">
+                    <input type="submit" name="boton" value="contactar">
+                </div>
+            </form>
         </section>
         <!--FIN Bloque contacto-->
     </article>
