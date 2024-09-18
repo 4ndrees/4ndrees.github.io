@@ -40,7 +40,7 @@ header{
 
 section{
     margin: 0px 50px 0px 50px;
-    padding: 50px 100px 10px 100px;
+    padding: 50px 50px 10px 50px;
     border-top: 1px solid #242424;
     border-left: 1px solid #242424;
     border-right: 1px solid #242424;
@@ -59,13 +59,14 @@ p{
     font-weight: 100;
 }
 
-strong{
-    font-style: normal;
+#name{
+    font-weight: bold;
+    color:#ffed86;
 }
 
-cite{
-    font-weight: 500;
+strong{
     font-style: normal;
+    color:#67ccff;
 }
 
 i{
@@ -100,7 +101,18 @@ ul{
 
 li{
     float: left;
-    margin-right: 22px;
+    margin-right: 11px;
+    margin-left: 11;
+}
+
+#socialmedia li button{
+    background-color: #00A8FF;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    margin-left: 40px;
 }
 
 /*Clases e id's*/
@@ -133,19 +145,28 @@ li{
 
 /*Grid sobre mi*/
 #sobremi{
-    display: grid;
-    grid-template-columns: 350px 1fr;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
-#sobremi-image{
+#sobremi img{
+    border-radius: 20px;
+}
+
+#sobremi-img{
+    text-align: center;
     margin: 40px;
     padding: 40px;
+    width: 350px;
 }
 
 #sobremi-text{
     margin:20px;
+    margin-top:0px;
     padding:20px;
+    padding-top: 0px;
+    width: 700px
 }
 
 #sobremi-title{
@@ -172,7 +193,7 @@ li{
 
 .card{
     width: 300px;
-    border-radius: 10%;
+    border-radius: 20px;
     background-color: #262626;
 }
 
@@ -204,12 +225,12 @@ li{
 
 .card button{
     background-color:#00A8FF;
-    border-radius: 20%;
+    border-radius: 10px;
     margin-bottom: 30px;
     margin-top: 10px;
     padding: 5px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     width: 120px;
 }
 
@@ -219,6 +240,7 @@ li{
     font-size: 25px;
 }
 
+/*Grid habilidades*/
 #lista-habilidades{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -268,12 +290,32 @@ li{
     grid-row:2;
 }
 
+/*Sección de contacto*/
+#contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px 200px;
+    padding: 80px 50px;
+}
+
+#info-contacto .section-title{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#info-contacto h3{
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
 /*Formulario*/
 
 form{
     width: 400px;
     background-color: #262626;
-    border-radius: 10%;
+    border-radius: 20px;
     padding: 30px 10px 10px 10px;
 }
 
@@ -298,6 +340,17 @@ input[type="submit"]{
     padding: 10px;
     background-color: #00A8FF;    
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
+}
+
+#info-contacto p{
+    display: flex;
+    font-size: 20px;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
+#info-contacto img{
+    margin-right: 10px;
 }
