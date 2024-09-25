@@ -2,6 +2,7 @@
 *{
     margin:0;
     padding:0;
+    border:0;
 }
 
 body{
@@ -192,7 +193,7 @@ li{
 }
 
 .card{
-    width: 300px;
+    width: 400px;
     border-radius: 20px;
     background-color: #262626;
 }
