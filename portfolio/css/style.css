@@ -147,8 +147,11 @@ li{
 /*Grid sobre mi*/
 #sobremi{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
+    gap: 80px 80px;
+    padding: 80px 50px;
 }
 
 #sobremi img{
@@ -157,17 +160,19 @@ li{
 
 #sobremi-img{
     text-align: center;
-    margin: 40px;
-    padding: 40px;
+    /*margin: 40px 0px;
+    padding: 40px 0px;*/
     width: 350px;
 }
 
 #sobremi-text{
-    margin:20px;
-    margin-top:0px;
+    /*margin:20px;*/
+    /*margin-top:0px;
     padding:20px;
-    padding-top: 0px;
-    width: 700px
+    padding-top: 0px;*/
+    min-width: 500px;
+    max-width: 700px;
+    width: auto;
 }
 
 #sobremi-title{
