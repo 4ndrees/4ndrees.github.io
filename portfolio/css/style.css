@@ -155,41 +155,39 @@ a:-moz-any-link{
     width: 200px;
     height: 40px;
     margin-left: 40px;
-}
-
-.btn{
-    all: unset;
+    transition: all 0.3s ease;
+    z-index: 1;
     position: relative;
-    border-radius: 8px;
-    font-size: 16px;
-    overflow: hidden; /* will cause famous overflow bug */
-    clip-path: inset(0 0 0 0 round 8px); /* bug workaround */
-    cursor: pointer;
-    border: 1px solid rgb(255 255 255 / .12);
-    background-color: #00A8FF;
-    color: #000; 
+    display: inline-block;
+    outline: none;
 }
 
-.btn::after{
-    content: '';
-    position: absolute;
-    top: var(--y);
-    left: var(--x);
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    width: 10em;
-    height: 10em;
-    background: conic-gradient(from 45deg at 40% 70%, #94f9ff, #a4f5ff, #ffe6c0, #c4ffe1, #c4ffe1, #ffe2bd, #6efdff, #70ffea);
-    background-color: 000;
-    filter: blur(14px);
-    mix-blend-mode: overlay;
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
-    pointer-events: none;
+.btn {
+    background: #00A8FF;
+    border: none;
+    z-index: 1;
 }
 
-.btn:hover::after{
-    opacity: .9;
+.btn:after {
+position: absolute;
+content: "";
+width: 0;
+height: 100%;
+top: 0;
+right: 0;
+z-index: -1;
+background-color: #61caff;
+border-radius: 5px;
+transition: all 0.3s ease;
+}
+
+.btn:hover:after {
+left: 0;
+width: 100%;
+}
+
+.btn:active {
+top: 2px;
 }
 
 /*Sobre mi*/
@@ -301,30 +299,33 @@ a:-moz-any-link{
     clip-path: inset(0 0 0 0 round 8px); /* bug workaround */
     cursor: pointer;
     border: 1px solid rgb(255 255 255 / .12);
-    background-color: #00A8FF;
     color: #000; 
+    transition: all 0.3s ease;
+    outline: none;
+    z-index: 1;
+    position: relative;
 }
 
-.card-btn::after{
-    content: '';
+.card-btn:after {
     position: absolute;
-    top: var(--y);
-    left: var(--x);
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    width: 10em;
-    height: 10em;
-    background: conic-gradient(from 45deg at 40% 70%, #94f9ff, #a4f5ff, #ffe6c0, #c4ffe1, #c4ffe1, #ffe2bd, #6efdff, #70ffea);
-    background-color: 000;
-    filter: blur(14px);
-    mix-blend-mode: overlay;
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
-    pointer-events: none;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #61caff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
-.card-btn:hover::after{
-    opacity: .9;
+.card-btn:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.card-btn:active {
+    top: 2px;
 }
 
 
