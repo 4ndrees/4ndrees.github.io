@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a5ea243312.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 <body>
     <!--Bloque de navegador-->
@@ -25,16 +26,43 @@
     <!--FIN Bloque navegador-->
     <!--Bloque de inicio-->
     <header id="inicio">
-        <h2 class="section-title">Software Developer</h2>
+        <script src="/index.js"></script>
+        <h2 class="section-title">Ingeniero Informático</h2>
         <h1>ANDRÉS VIÑÉ</h1>
         <div id="socialmedia">
             <ul>
-                <li><a href="https://www.linkedin.com/in/andres-vine-sanchez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/4ndrees" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://wa.me/34618804981" tabindex="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><button>Curriculum</button></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/andres-vine-sanchez/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/4ndrees" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/34618804981" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <button class="btn" id="download-cv">Curriculum</button>
+                </li>
             </ul>
         </div>
+        
+        <!-- JavaScript Inline -->
+        <script>
+            document.getElementById('download-cv').addEventListener('click', function () {
+                const link = document.createElement('a');
+                link.href = './curriculum.pdf'; 
+                link.download = 'Curriculum-Andres-Vine-Sanchez.pdf'; 
+                document.body.appendChild(link); // Añadir al DOM temporalmente
+                link.click(); // Simular clic
+                document.body.removeChild(link); // Eliminar después de la descarga
+            });
+        </script>
     </header>
     <!--FIN Bloque de inicio-->
     <article>
@@ -49,7 +77,7 @@
                     por aprender y ansioso por adentrarme en el mundo profesional. Me interesa tanto el area de <strong>desarrollo de Software</strong> como la
                     <strong>arquitectura del mismo</strong> que hace que todo funcione correctamente.</p>
                 <p>Me defino como una persona entusiasta, trabajadora y creativa, comprometida con la innovación y el desarrollo en este 
-                    campo tan dinámico, donde mi máxima es escribir codigo limpio y optimizado para soluciones prácticas.</p>
+                    campo tan dinámico, donde mi máxima es escribir código limpio y optimizado para soluciones prácticas.</p>
             </div>
         </section>
         <!--FIN Bloque sobre mi-->
@@ -69,7 +97,7 @@
                         </div>
                         <p>Trabajo de la universidad para aprender a utilizar redes neuronales convolucionales en el reconocimiento de imágenes<br><br></p>
                         <a href="https://github.com/4ndrees/Deteccion_de_Neumonia" target="_blank">
-                            <button><i class="fa-brands fa-github"></i><span>&ensp;github</span></button>
+                            <button class="card-btn"><i class="fa-brands fa-github"></i><span>&ensp;github</span></button>
                         </a>
                     </div>
                 </div>
@@ -85,7 +113,7 @@
                         </div>
                         <p>Minijuego basado en pokemon escrito en python<br><br><br></p>
                         <a href="https://github.com/4ndrees/pokemon_snake" target="_blank">
-                            <button><i class="fa-brands fa-github"></i><span>&ensp;github</span></button>
+                            <button class="card-btn"><i class="fa-brands fa-github"></i><span>&ensp;github</span></button>
                         </a>
                     </div>
                 </div>
@@ -101,7 +129,7 @@
                         </div>
                         <p>Simulador físico implementado en java en el que se muestran las interacciones entre partículas</p>
                         <a href="https://github.com/4ndrees/Simulador-Fisico" target="_blank">
-                            <button><i class="fa-brands fa-github"></i><span>&ensp;github</span></button>
+                            <button class="card-btn"><i class="fa-brands fa-github"></i><span>&ensp;github</span></button>
                         </a>
                     </div>
                 </div>
@@ -150,27 +178,6 @@
         <!--FIN Bloque Habilidades-->
         <!--Bloque contacto-->
         <section id="contacto">
-            <form action="#">
-                <div class="form-item">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" minlength="2" maxlength="64" size="32" required>
-                </div>
-                <div class="form-item">
-                    <label for="empresa">Empresa</label>
-                    <input type="text" id="empresa" name="empresa" minlength="2" maxlength="128" size="32">
-                </div>
-                <div class="form-item">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" min-length="10" maxlength="128" size="32" required>
-                </div>
-                <div class="form-item">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="33" rows="10"></textarea>
-                </div>
-                <div class="form-item">
-                    <input type="submit" name="boton" value="contactar">
-                </div>
-            </form>
             <div id="info-contacto">
                 <h2 class="section-title">Contacto</h2>
                 <p><img src="./imagenes/icons/correo_logo.png" alt="foto gmail">vs1andres@gmail.com</p>
